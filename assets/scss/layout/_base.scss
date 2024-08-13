@@ -1,0 +1,19 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    letter-spacing: 0.1em;
+}
+p{
+    letter-spacing: 0.05em;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin lg{
+    @media(min-width:992px){
+        @content;
+    }
+}

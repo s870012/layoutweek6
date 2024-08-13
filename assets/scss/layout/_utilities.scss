@@ -1,0 +1,12 @@
+//btn-lgc
+.navbar-expand-lg .navbar-nav .btn-lgc{
+    padding: 16px 24px ;
+    border-radius: 50rem;
+}
+
+//hover{
+.hover{
+    &:hover{
+        background-color: $green-100;
+    }
+}

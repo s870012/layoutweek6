@@ -1,0 +1,137 @@
+//background
+.banner-bg{
+  background-image: url("/assets/images/banner-sm.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 551px;
+}
+@include lg{
+  .banner-bg{
+    background-image: url("/assets/images/banner.png");
+    height: 661px;
+  }
+  .banner-box{
+    margin-left: 61px;
+  }
+}
+
+// .promote-bg{
+//   
+// }
+
+//title
+.title{
+  font-size: 24px;
+}
+@include lg{
+  .title{
+    font-size: 32px;
+  }
+}
+
+.title-card{
+  font-size: 20px;
+}
+
+
+//theme
+.theme{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 84px;
+}
+.theme::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.theme:hover::after {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+//theme image
+.theme-1{
+  background-image: url("/assets/images/theme-1-sm.png");
+}
+.theme-2{
+  background-image: url("/assets/images/theme-2-sm.png");
+}
+.theme-3{
+  background-image: url("/assets/images/theme-3-sm.png");
+}
+.theme-4{
+  background-image: url("/assets/images/theme-4-sm.png");
+}
+.theme-5{
+  background-image: url("/assets/images/theme-5-sm.png");
+}
+.theme-6{
+  background-image: url("/assets/images/theme-6-sm.png");
+}
+.theme-7{
+  background-image: url("/assets/images/theme-7-sm.png");
+}
+.theme-8{
+  background-image: url("/assets/images/theme-8-sm.png");
+}
+@include lg{
+  .theme{
+    height: 200px;
+  }
+  .theme-1{
+    background-image: url("/assets/images/theme-1.png");
+  }
+  .theme-2{
+    background-image: url("/assets/images/theme-2.png");
+  }
+  .theme-3{
+    background-image: url("/assets/images/theme-3.png");
+  }
+  .theme-4{
+    background-image: url("/assets/images/theme-4.png");
+  }
+  .theme-5{
+    background-image: url("/assets/images/theme-5.png");
+  }
+  .theme-6{
+    background-image: url("/assets/images/theme-6.png");
+  }
+  .theme-7{
+    background-image: url("/assets/images/theme-7.png");
+  }
+  .theme-8{
+    background-image: url("/assets/images/theme-8.png");
+  }
+}
+
+//vip
+.vip{
+  border: 1px solid $gray-400;
+  border-radius: 4px;
+  background-color: $beige-300;
+  padding: 4px 8px;
+}
+
+//promote-event
+.event{
+  color: $green;
+}
+
+@include lg{
+  .event{
+    color: $beige-400;
+  }
+}
+

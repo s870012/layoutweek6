@@ -1,0 +1,8 @@
+.btn-w{
+  width: 100%;
+}
+@include lg{
+  .btn-w{
+    width: auto;
+  }
+}
