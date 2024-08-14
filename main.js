@@ -25,3 +25,26 @@ const swiper = new Swiper(".swiper", {
       }
     }
   });
+
+  const swiper1 = new Swiper(".swiper-one", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation:{
+        prevEl:'.swiper-button-prev',
+        nextEl:'.swiper-button-next',
+    },
+    grid: {
+      rows: 1,
+    },
+    breakpoints: {
+      992: {      
+        grid: { 
+          rows: 0,
+        },
+        slidesPerView: 1,
+        spaceBetween: 24,
+      }
+    }
+  });

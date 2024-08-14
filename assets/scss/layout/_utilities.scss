@@ -4,9 +4,31 @@
     border-radius: 50rem;
 }
 
+.btn-smc{
+    padding: 4px 8px;
+}
+
+//bg
+.bg-beige-300{
+    background-color: $beige-300;
+}
+
 //hover{
 .hover{
     &:hover{
         background-color: $green-100;
     }
+}
+
+//margin、padding
+.mb-12{
+    margin-bottom: 12px;
+}
+.me-10{
+    margin-right: 12px;
+}
+
+//fz
+.fs-7{
+    font-size: 12px;
 }
