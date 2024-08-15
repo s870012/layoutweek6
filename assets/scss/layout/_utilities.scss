@@ -4,20 +4,33 @@
     border-radius: 50rem;
 }
 
+@include lg{
+    .btn{
+        padding: 16px 24px;
+    }
+}
+
 .btn-smc{
     padding: 4px 8px;
 }
 
 //bg
+.bg-beige-200{
+    background-color: $beige-200;
+  }  
 .bg-beige-300{
     background-color: $beige-300;
 }
 
-//hover{
+//hover、active
 .hover{
     &:hover{
         background-color: $green-100;
+        border-radius: 4px;
     }
+}
+.active{
+    border-radius: 4px !important;
 }
 
 //margin、padding
@@ -31,4 +44,31 @@
 //fz
 .fs-7{
     font-size: 12px;
+}
+
+//border
+.rounded-start-c{
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+}
+.rounded-end-c{
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+}
+.border-gray-400{
+    border-color: $gray-400 !important;
+}
+.text-gray-400{
+color: $gray-400 !important;
+}
+  
+
+//width
+.w-20{
+    width: 20%;
+}
+
+//text-color
+.text-beige-400{
+    color: $beige-400;
 }

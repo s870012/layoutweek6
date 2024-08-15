@@ -16,10 +16,6 @@
   }
 }
 
-// .promote-bg{
-//   
-// }
-
 //title
 .title{
   font-size: 24px;
@@ -34,6 +30,14 @@
   font-size: 20px;
 }
 
+.topic-oneword{
+  font-size: 2.5rem;
+}
+@include lg{
+  .topic-oneword{
+    font-size: 3.25rem;
+  }
+}
 
 //theme
 .theme{
@@ -124,14 +128,45 @@
   padding: 4px 8px;
 }
 
-//promote-event
-.event{
-  color: $green;
-}
-
 @include lg{
   .event{
     color: $beige-400;
   }
 }
 
+//who are looking swiper
+.swiper-one{
+  width: 20.25rem;
+}
+
+//lift swiper
+.lift-swiper::after {
+  content: "";
+  width: 32%;
+  height: 1px;
+  background-color: #6c757d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//project
+.project{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 236px;
+}
+.project-1{
+  background-image: url("/assets/images/projects-1.png");
+}
+.project-2{
+  background-image: url("/assets/images/projects-2.png");
+}
+.project-3{
+  background-image: url("/assets/images/projects-3.png");
+}
+.project-4{
+  background-image: url("/assets/images/projects-4.png");
+}

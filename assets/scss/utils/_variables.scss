@@ -463,9 +463,17 @@ $spacers: (
 // Define the edge positioning anchors of the position utilities.
 
 // scss-docs-start position-map
+// $position-values: (
+//   0: 0,
+//   50: 50%,
+//   100: 100%
+// ) !default;
 $position-values: (
   0: 0,
+  10: 10%,
+  25: 25%,
   50: 50%,
+  75: 75%,
   100: 100%
 ) !default;
 // scss-docs-end position-map
@@ -608,8 +616,10 @@ $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 $box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
 // scss-docs-end box-shadow-variables
 
-$component-active-color:      $white !default;
-$component-active-bg:         $primary !default;
+// $component-active-color:      $white !default;
+$component-active-color:      $gray-500 !default;
+// $component-active-bg:         $primary !default;
+$component-active-bg:         $green-100 !default;
 
 // scss-docs-start focus-ring-variables
 $focus-ring-width:      .25rem !default;
@@ -684,6 +694,8 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+
+$hi-font-size:                $font-size-base * 3.25 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -693,7 +705,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  i: $hi-font-size
 ) !default;
 // scss-docs-end font-sizes
 

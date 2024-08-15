@@ -26,7 +26,7 @@ const swiper = new Swiper(".swiper", {
     }
   });
 
-  const swiper1 = new Swiper(".swiper-one", {
+  const swiper1 = new Swiper(".swiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true
@@ -35,16 +35,17 @@ const swiper = new Swiper(".swiper", {
         prevEl:'.swiper-button-prev',
         nextEl:'.swiper-button-next',
     },
-    grid: {
-      rows: 1,
+    grid:{
+      rows:1,
     },
     breakpoints: {
-      992: {      
-        grid: { 
-          rows: 0,
-        },
+      767: {      
+        slidesPerView: 2,
+        spaceBetween: 48,
+      },
+      576:{
         slidesPerView: 1,
-        spaceBetween: 24,
+        spaceBetween: 48,
       }
     }
   });
