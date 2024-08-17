@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>所有文章</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <!-- banner -->
+    <div class="container p-0 p-lg-2i">
+      <div class="blog-bg"></div>
+    </div>
+    <!-- content preview -->
+    <div class="container">
+      <div class="pt-v pt-lg-vi">
+        <div class="row">
+          <div class="col-lg-8 mx-lg-auto">
+            <section class="fs-8 py-2">
+              <a href="index.html" class="text-gray-400">首頁 /</a>
+              <a href="blog.html" class="text-gray-400">所有文章 /</a>
+              <a href="article-all.html" class="text-success">私人島嶼的露營奇遇記</a>
+            </section>
+            <section class="pb-v">
+              <h1 class="title-lg pb-3">私人島嶼的露營奇遇記</h1>
+              <p class="text-gray-300">2024 / 5 / 1</p>
+            </section>
+            <section>
+              <p class="pb-4 pb-lg-v">嗨！我是秘境尋蹤小編 Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。</p>
+              <p class="pb-4 pb-lg-v">這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。</p>
+              <div class="position-relative">
+                <img src="/assets/images/content-1.png" alt="content-1" class="w-100">
+                <div class="article-lock position-absolute top-0"></div>
+              </div>
+              <div class="fw-bold pt-v pb-3 text-center">
+                <p class="d-none d-sm-block">本篇為會員專屬文章，馬上訂閱瀏覽所有內容！</p>
+                <div class="d-sm-none">
+                  <p>本篇為會員專屬文章</p>
+                  <p>馬上訂閱瀏覽所有內容！</p>
+                </div>
+              </div>
+              <p class="text-center"><a href="#" class="btn btn-success text-white">我要訂閱 <i class="bi bi-arrow-right"></i></a></p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/article-read'); -%>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

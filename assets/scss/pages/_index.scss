@@ -16,29 +16,6 @@
   }
 }
 
-//title
-.title{
-  font-size: 24px;
-}
-@include lg{
-  .title{
-    font-size: 32px;
-  }
-}
-
-.title-card{
-  font-size: 20px;
-}
-
-.topic-oneword{
-  font-size: 2.5rem;
-}
-@include lg{
-  .topic-oneword{
-    font-size: 3.25rem;
-  }
-}
-
 //theme
 .theme{
   background-repeat: no-repeat;
@@ -138,11 +115,14 @@
 .swiper-one{
   width: 20.25rem;
 }
+.shadow-c{
+  box-shadow: 0 2px 8px rgb(110, 107, 103, 8%);
+}
 
-//lift swiper
-.lift-swiper::after {
+//life swiper
+.life-swiper::after {
   content: "";
-  width: 32%;
+  width: 80px;
   height: 1px;
   background-color: #6c757d;
   position: absolute;
@@ -169,4 +149,33 @@
 }
 .project-4{
   background-image: url("/assets/images/projects-4.png");
+}
+
+.project-topic{
+  position: absolute;
+  top: -18px;
+  left: 16px;
+  background-color: $white;
+  border: 1px solid $green-100;
+  border-radius: 4px;
+  color: $green-300;
+  padding: 8px 12px;
+}
+.project-describe{
+  position: absolute;
+  bottom: 0;
+}
+
+//subscribe fs
+@include lg{
+  .gowhere{
+    font-size: 1.25rem !important;
+    font-weight: 900 !important;
+  }
+}
+@include xl{
+  .life-style{
+    font-size: 2rem !important;
+    font-weight: 700 !important;
+  }
 }

@@ -1,0 +1,50 @@
+.project-type{
+    font-size: 16px;
+    color: $gray-700;
+}
+@include lg {
+    .project-type{
+        font-size: 20px;
+        color: $gray-400;
+    }
+}
+
+.price{
+    color: $gray-700;
+    font-size: 32px;
+}
+@include lg{
+    .price{
+        color: $gray-400;
+        font-size: 40px;
+    }
+}
+
+.permonth{
+    color: #a1a1a1;
+    font-size: 20px;
+}
+@include lg{
+    .permonth{
+        color: $gray-300;
+        font-size: 24px;
+    }
+}
+
+.pay-ctrl:checked + .checked-success{
+    background-color: $green;
+    color: $white !important;
+}
+.select:hover{
+    border: 2px solid $success;
+}
+.select:hover .price{
+    color: $success;
+}
+.select:hover .bi-check-square-fill{
+    color: $gray-500 !important;
+}
+.select:hover .btn-light{
+    background-color: $success;
+    color: $white !important;
+}

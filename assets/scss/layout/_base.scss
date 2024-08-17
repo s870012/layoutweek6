@@ -11,9 +11,19 @@ img{
     max-width: 100%;
     height: auto;
 }
+@mixin xl{
+    @media(min-width: 1200px){
+        @content;
+    }
+}
 
 @mixin lg{
-    @media(min-width:992px){
+    @media(min-width: 992px){
+        @content;
+    }
+}
+@mixin md{
+    @media(min-width: 576px){
         @content;
     }
 }
