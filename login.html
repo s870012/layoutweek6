@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script type="module" crossorigin src="/layoutweek6/assets/main-0ddf51c1.js"></script>
+  <link rel="stylesheet" href="/layoutweek6/assets/main-68ac104e.css">
+</head>
+<body>
+    <header class="container">
+    <nav class="navbar navbar-expand-lg py-v border-bottom">
+        <a class="navbar-brand me-lg-iv" href="index.html"><img src="data:image/png;base64,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" alt="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex input-group w-auto me-lg-auto mt-2">
+                <input class="form-control border border-end-0 rounded-start-pill" type="search" placeholder="搜尋文章">
+                <a class="input-group-text btn border border-start-0" type="submit"><i class="bi bi-search text-success"></i></a>
+            </form>
+        <ul class="navbar-nav justify-content-end align-items-center mb-2 mb-lg-0">
+            <li class="nav-item me-lg-20 py-2 py-lg-0 mt-4 mt-lg-0 me-lg-v"><a class="nav-link" href="article-list.html">所有文章</a></li>
+            <li class="nav-item me-lg-20 py-2 py-lg-0 mt-4 mt-lg-0 me-lg-v"><a class="nav-link" href="subscribe.html">訂閱方案</a></li>
+            <li class="nav-item me-lg-20 py-2 py-lg-0 mt-4 mt-lg-0 me-lg-v"><a class="nav-link" href="#">關於我們</a></li>
+            <li class="nav-item py-2 mt-4 py-lg-0 mt-lg-0 btn-w"><a href="register.html" class="btn bg-success text-white rounded-pill btn-w">註冊/登入</a></li>
+        </ul>
+        </div>
+    </nav>
+</header>    <div class="container">
+        <div class="py-5v">
+            <div class="row">
+                <div class="col-lg-6 mx-lg-auto">
+                    <div class="card p-4 p-lg-v">
+                        <h1 class="text-success fs-4 pb-4 pb-lg-v">註冊</h1>
+                        <form action="target">
+                            <label for="account" class="mb-1 mb-lg-2">會員帳號</label>
+                            <input type="text" id="account" name="account" placeholder="請輸入會員帳號" class="d-block content mb-3">
+                            <label for="password" class="mb-1 mb-lg-2">密碼</label>
+                            <input type="password" name="password" id="password" placeholder="請輸入密碼" class="d-block content mb-3">
+                            <button type="submit" class="btn btn-submit btn-success text-white w-100">立即登入 <i class="bi bi-arrow-right"></i></button>
+                        </form>
+                        <div class="py-iv py-lg-sv">
+                            <div class="position-relative decorate">
+                                <p class="text-center text-gray-300 position-absolute top-0 start-50 translate-middle bg-white px-3">或以其他方式註冊</p>
+                            </div>
+                        </div>
+                        <p class="btn btn-light fw-bold text-gray-700 d-flex align-items-center justify-content-center mb-1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==" alt="google" class="me-2">使用 Google 註冊</p>
+                        <p class="btn btn-light fw-bold text-gray-700 d-flex align-items-center justify-content-center"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==" alt="facebook" class="me-2">使用 Google 註冊</p>
+                        <div class="d-flex justify-content-center py-4">
+                            <p class="me-2">已經是會員了？</p>
+                            <p><a href="register.html" class="text-success">點此註冊</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container">
+    <p class="text-center py-4 border-top fs-footer">©Vivre 2024 All right Reserved</p>
+</footer>    
+</body>
+</html>
