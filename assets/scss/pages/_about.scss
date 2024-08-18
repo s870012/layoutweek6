@@ -1,0 +1,41 @@
+.about-bg{
+    background-image: url("/assets/images/about-banner-sm.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+}
+
+@include lg{
+    .about-bg{
+        background-image: url("/assets/images/about-banner.png");
+        height: 454px;
+    }
+}
+
+.century-bg{
+    background-color: $beige-200;
+}
+
+//century
+.century-year{
+    background-color: $beige-400;
+    color: $white;
+    padding: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+@include lg{
+    .century-year{
+        font-size: 24px;
+    }
+}
+.century-month{
+    font-weight: 700;
+    color: $gray-400;
+}
+@include lg{
+    .century-month{
+        font-size: 24px;
+    }
+}
