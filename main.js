@@ -70,3 +70,5 @@ const swiper = new Swiper(".swiper-article", {
     slidesPerView: 1,
     spaceBetween: 24,
   });
+
+  AOS.init();
